@@ -5,18 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
-            
+            <section class="nav-primary">
+                <span class="mdi mdi-view-dashboard icon-dashboard">Dashboard</span>
+            </section>
+            <section class="nav-activity">
+                <ul>
+                    <li><a href="#" class="mdi mdi-home">Home</a></li>
+                    <li><a href="*" class="mdi mdi-card-account-details-outline">Profile</a></li>
+                    <li><a href="#" class="mdi mdi-message-processing">Messages</a></li>
+                    <li><a href="#" class="mdi mdi-history">History</a></li>
+                    <li><a href="#" class="mdi mdi-file-multiple">Tasks</a></li>
+                    <li><a href="#" class="mdi mdi-account-group">Communities</a></li>
+                </ul>
+            </section>
+            <section class="nav-settings">
+                <ul>
+                    <li><a href="#" class="mdi mdi-cog">Settings</a></li>
+                    <li><a href="#" class="mdi mdi-help-box-outline">Support</a></li>
+                    <li><a href="#" class="mdi mdi-shield-check">Privacy</a></li>
+                </ul>
+            </section>
         </aside>
 
         <header class="header">
             <div class="header-left">
                 
                 <form action="" class="search-bar"> 
-                    <button type="submit">Search</button>
+                    <span class="mdi mdi-magnify icon-search" role="button" aria-label="Search"></span>
                     <input type="search" id="site-search">
                 </form>
 
@@ -31,7 +52,8 @@
 
             <div class="header-right">
                 <section class="top-bar">
-                    <button class="notification">notification</button>
+                    <span class="mdi mdi-bell-ring-outline icon-notification" role="button" aria-label="Notifications"></span>
+
                     <div class="profile">
                         <img src="assets/arjay.jpg" alt="profile photo">
                         <h5>Arjay Dimaunahan</h5>
